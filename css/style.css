@@ -35,4 +35,70 @@ div.scroll-container {
     height: auto;
   }
 
+
+/* NAVIGAION MENU STYLING HERE!! */
+
+  nav {
+    display: flex;  
+    gap: 15px;  
+    background-color: black;  
+}
+
+.NavBarItem {
+    color: white;  
+    text-decoration: none;  
+    padding: 10px 15px;
+    margin: 12px;
+}
+
+/* Styling for if you hover over with the cursor */
+.NavBarItem:hover {
+    background-color: grey;
+    color: black;
+}
+
+.dropdown {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+/* Styling the navbar item (footage) from the dropdown */
+.dropdown > .NavBarItem {
+    padding: 10px 15px;
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+}
+
+/* Hide Subnav by default */
+.Subnav {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: grey;
+    padding: 10px;
+}
+
+/* Show on hover */
+.dropdown:hover .Subnav {
+    display: block;
+}
+
+/* Style Subnav links */
+.SubNavItem {
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 8px 15px;
+}
+
+/* Hover effect */
+.SubNavItem:hover {
+    background-color: white;
+    color: black;
+}
+
+/* END NAVIGATION MENU STYLING */
   
